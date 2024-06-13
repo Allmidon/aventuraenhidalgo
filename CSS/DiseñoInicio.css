@@ -1,0 +1,192 @@
+/* Importa las fuentes de Google Fonts 'Changa' con pesos de 200 a 800 y 'Jersey 10' */
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+:root {
+    --secundary-color: aquamarine; /* Color secundario */
+    --secundary-font: Comic Sans MS, cursive; /* Fuente secundaria */
+    --main-font: Changa, sans-serif; /* Fuente principal */
+}
+
+.logo {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+.logod {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+body {
+    font-family: var(--main-font); /* Fuente secundaria definida en las variables */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+.Titulo{
+    background-color: var(--secundary-color);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Pachuca { background-image: url('../IMAGENES/Pachuca.jpg'); }
+.Zacualtipan { background-image: url('../IMAGENES/Zacualtipan.jpeg'); }
+.Tasquillo { background-image: url('../IMAGENES/Tasquillo.jpg'); }
+.Mineral { background-image: url('../IMAGENES/Mineral.jpg'); }
+.Salvador { background-image: url('../IMAGENES/Salvador.jpg'); }
+.Actopan { background-image: url('../IMAGENES/Actopan.jpeg'); }
+.Ixmiquilpan { background-image: url('../IMAGENES/Ixmiquilpan.jpg'); }
+.Santiago { background-image: url('../IMAGENES/Santiago.jpg'); }
+.Huasca { background-image: url('../IMAGENES/Huasca.jpg'); }
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.item h2 {
+    margin: 0 0 10px;
+}
+
+.item p {
+    margin: 0;
+}
+
+.footer {
+    background-color: #6aa84f;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos del contador de visitas */
+.footer visit-counter {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 8px;
+    border-radius: 10px;
+}
+
+.footer visit-counter #counter {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-section {
+    padding: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
